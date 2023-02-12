@@ -402,11 +402,11 @@ impl<T: TS> TS for Option<T> {
             "called Option::name_with_type_args with {} args",
             args.len()
         );
-        format!("{} | null", args[0])
+        format!("{} | undefined", args[0])
     }
 
     fn inline() -> String {
-        format!("{} | null", T::inline())
+        format!("{} | undefined", T::inline())
     }
 
     fn dependencies() -> Vec<Dependency> {
