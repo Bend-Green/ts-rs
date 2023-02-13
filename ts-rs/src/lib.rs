@@ -572,8 +572,8 @@ mod bytes {
 }
 
 impl_primitives! {
-    u8, i8, u16, i16, u32, i32, f32, f64, usize, isize => "number",
-    u64, i64, u128, i128 => "bigint",
+    u8, i8, u16, i16, u32, i32, u64, i64, f32, f64, usize, isize => "number",
+    u128, i128 => "bigint",
     bool => "boolean",
     char, Path, PathBuf, String, &'static str => "string",
     () => "null"
